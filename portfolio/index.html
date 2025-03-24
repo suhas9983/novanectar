@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style2.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1>Hi, I'm Suhas Desai</h1>
+        <p>A Passionate Java Developer & Full-Stack Enthusiast</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-content">
+        <div class="about-text">
+          <h1>About Me</h1>
+          <p>
+            I am a detail-oriented Java Developer specializing in backend development
+            using Java, Spring, and Spring Boot. I focus on building efficient, scalable
+            applications and integrating modern front-end technologies like React, HTML, CSS, and JavaScript.
+          </p>
+          <p>
+            With expertise in database management using MySQL and cloud computing concepts,
+            I ensure optimized and scalable solutions for various applications.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="profile.jpeg" alt="Profile Image" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h1>Projects</h1>
+      <div class="project-grid">
+        <div class="project">
+          <img src="img.jpeg" alt="Project 1" />
+          <h2>Todo App</h2>
+          <p>A React-based task management app with Redux state management.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <img src="download.jpeg" alt="Project 2" />
+          <h2>Weather App</h2>
+          <p>A React-based weather forecasting app integrating an external API.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h1>Skills</h1>
+      <div class="skills-grid">
+        <div class="skill">
+          <img src="html.png" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <img src="css.jpeg" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <img src="js.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <img src="react.png" alt="React" />
+          <p>React</p>
+        </div>
+        <div class="skill">
+          <img src="java.jpeg" alt="Java" />
+          <p>Java</p>
+        </div>
+        <div class="skill">
+          <img src="spring.jpeg" alt="Spring Boot" />
+          <p>Spring Boot</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h1>Contact</h1>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Suhas Desai. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
