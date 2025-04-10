@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style2.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero-section" >
+      <div class="hero-content">
+        <h1><u>NOVANECTAR SERVICES</u></h1>
+        <p>Welcome to
+          <i><u>NOVANECTAR SERVICES</u></i> Official Job Portal – your gateway to exciting career opportunities and a bright professional future!
+
+          Our job portal is designed to connect talented individuals with our diverse and growing organization. Whether you’re a seasoned professional or a fresh graduate, this platform allows you to explore current job openings, apply directly online, and track your application status.
+          
+          Key Features:
+          
+          User-Friendly Interface: Easily search and filter job listings by department, location, experience level, and job type.
+          
+          Profile Management: Create and manage your professional profile with your resume, contact details, and skill set.
+          
+          Real-Time Updates: Stay informed with the latest job postings and recruitment updates.
+          
+          Application Tracker: Monitor the status of your submitted applications and get timely notifications.
+          
+          Secure and Confidential: We ensure that all your data is protected and used strictly for recruitment purposes.
+          
+          
+          Join us and become a part of a team that values innovation, integrity, and growth. Start your journey with us today by exploring the opportunities waiting for you.
+          
+          
+          ---</p>
+        <a href="#projects" class="btn">CONNECT WITH US</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about" title="About Yourself">
+      <div class="about-content" text-align:center>
+        <div class="about-text">
+        
+          <h1 >About Yourself</h1>
+          <p>
+            <textarea name="Message" rows="10" cols="180" ></textarea> 
+          </p>
+          
+          </div>
+          </div>
+      
+         
+          <h2>Upload Your Image</h2>
+
+          <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="imageInput" accept="image/*"><br>
+            <img id="preview" src="#" alt="Image preview" style="display: none;">
+            <button type="submit">Submit</button>
+          </form>
+        
+          <script>
+            const imageInput = document.getElementById('imageInput');
+            const preview = document.getElementById('preview');
+        
+            imageInput.addEventListener('change', function () {
+              const file = this.files[0];
+              if (file) {
+                const reader = new FileReader();
+                preview.style.display = "block";
+        
+                reader.addEventListener("load", function () {
+                  preview.src = reader.result;
+                });
+        
+                reader.readAsDataURL(file);
+              } else {
+                preview.style.display = "none";
+                preview.src = "#";
+              }
+            });
+        
+            // Optional: prevent form submission in this demo
+            document.getElementById('uploadForm').addEventListener('submit', function (e) {
+              e.preventDefault();
+              alert('Image upload logic goes here!');
+            });
+          </script>
+          
+        
+    </section>
+
+    <section id="PROJECTS" class="section">
+      <h1>PROJECTS</h1>
+      <div class="project-grid">
+        <div class="project">
+          <form>
+            <h2>PROJECT 1</h2>
+            <h3>DESCRIPTION</h3>
+            <textarea name="Message" rows="10" cols="30"></textarea> 
+          </form>
+        
+          
+          <div class="project-grid">
+            <div class="project">
+              <form>
+                <h2>PROJECT 2</h2>
+                <h3>DESCRIPTION</h3>
+              <textarea name="Message" rows="10" cols="30"></textarea> 
+              </form>
+      </div>
+    </section>
+    <form>
+      <section id="skills" class="section">
+      <h1>SKILLS</h1>
+      <label for="skills"><h2>Choose Your Skills:</h2></label>
+      <br>
+      
+       <select id="skills" name="skill[]" multiple>
+        
+        <option value="HTML">HTML </option>
+        <option value="CSS">CSS </option>
+        <option value="JS">JS </option>
+        <option value="JAVA">JAVA </option>
+        <option value="PYTHON">PYTHON </option>
+        <option value="C">C </option>
+        <option value="C++">C++ </option>
+      
+      </select>
+      <br>
+      <input type="submit" value="submit">
+      </section>
+    </form>
+
+    <section id="contact" class="section">
+      <h1>Contact</h1>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Suhas Desai. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
